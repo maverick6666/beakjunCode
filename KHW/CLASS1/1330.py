@@ -19,4 +19,4 @@ if a == b:
 elif a > b:
     print(">")
 elif a < b:
-    print("<")햐
+    print("<")
