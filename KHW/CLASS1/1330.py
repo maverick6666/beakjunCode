@@ -1,13 +1,13 @@
 
 while True:
-    a, b = input().split()
-
-    if (a < -10000 or a > 10000):
+    try:
+        a, b = map(int, input().split())
+        if -10000 <= a <= 10000 and -10000 <= b <= 10000:
+            break
+        else:
+            print("다시 입력하세요")
+    except ValueError:
         print("다시 입력하세요")
-    elif (b < -10000 or b > 10000):
-        print("다시 입력하세요")
-    else:
-        break
 
 if a == b:
     print("==")
