@@ -1,9 +1,7 @@
 testcase = int(input())
 for i in range(testcase):
-    test = list(map(str,input().split()))
-    R = int(test[0])
-    S = list(test[1])
+    R,S = input().split()
 
-for j in range(len(S)):
-    P = ''.join(R*S)
-    print(P)
+    for i in S:
+        print(i*int(R),end='')
+    print()
